@@ -1,5 +1,6 @@
 import numpy as np
 
-# syntax: arange([start,] stop[
+# syntax: arange([start, stop), step, dtype = None])
 
-np.arange()
+a = np.arange(1, 10)
+print(a)
