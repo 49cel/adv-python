@@ -11,3 +11,6 @@
 - step sets the spacing bw two adjacent intervals
 - dtype specifies the data type of output array
 
+### linspace function
+- - -
+-
