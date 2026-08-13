@@ -13,7 +13,7 @@
 - arange works in an unexpected way when you specify dtype to be int, but then use a floating point value as step, since this is internally a c-level array it needs to allocate memory first, so it calculates how many elements are in the array and then converts them to int, which truncates or rounds off the fractional part, this causes unexpected behaviour (for example: when using 0.5 as the step value, it defaults to the step value being 1, and 2.5 gets rounded off to 3) this is a well known bug in the numpy documentation and should be avoided (i don't fully understand this yet so take it with a grain of salt)
 
 
-### linspace function
+### linspace() function
 - - -
 - syntax: `linspace(start, stop, num=n, endpoint'True/False, retstep=True/False)`
 - it returns an ndarray consisting of equally spaced samples, the samples can lie within a closed interval or open interval depending on what you set the endpoint to be (True/False)
