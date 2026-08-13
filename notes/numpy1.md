@@ -10,7 +10,7 @@
 - the interval is [start, stop), meaning the starting value is included and the ending value is excluded
 - step sets the spacing bw two adjacent intervals
 - dtype specifies the data type of output array
-- arange works in an unexpected way when you specify dtype to be int, but then use a floating point value as step, since this is internally a c-level array it needs to allocate memory first, so it calculated how many elements are in the array and then converts them to int, which truncates or rounds off the fractional part, this causes unexpected behaviour (for example: when using 0.5 as the step value, it defaults to the step value being 1, and 2.5 gets rounded off to 3) this is a well known bug in the numpy documentation and should be avoided (i don't fully understand this yet so take it with a grain of salt)
+- arange works in an unexpected way when you specify dtype to be int, but then use a floating point value as step, since this is internally a c-level array it needs to allocate memory first, so it calculates how many elements are in the array and then converts them to int, which truncates or rounds off the fractional part, this causes unexpected behaviour (for example: when using 0.5 as the step value, it defaults to the step value being 1, and 2.5 gets rounded off to 3) this is a well known bug in the numpy documentation and should be avoided (i don't fully understand this yet so take it with a grain of salt)
 
 
 ### linspace function
