@@ -4,7 +4,7 @@
 - it is actually written in C, so it is much faster than your typical python list management
 - to check the time difference, you can either use the time library or the timeit function, the time library stores the current time universally for everyone which keeps incrementing every second, the duration is calculated by calculating the difference between the timestamp after execution and before execution
 
-### arange function
+### arange() function
 - - -
 - used to generate an ndarray of evenly spaced intervals 
 - the interval is [start, stop), meaning the starting value is included and the ending value is excluded
@@ -15,4 +15,11 @@
 
 ### linspace function
 - - -
--
+- syntax: `linspace(start, stop, num=n, endpoint'True/False, retstep=True/False)`
+- it returns an ndarray consisting of equally spaced samples, the samples can lie within a closed interval or open interval depending on what you set the endpoint to be (True/False)
+- the parameters used are - start, stop, num=50, endpoint and retstep
+    1. **start** - specifies the starting value
+    2. **stop** - specifies the ending value (may or may not be included)
+    3. **endpoint** - specifies if endpoint should be included or not (last value), you can toggle it to be True or False
+    4. **retstep** - returns the step value used
+- whats different from arange is that, arange generates a number of values with the specified step between a starting and ending point, but in linspace you specify the number of elements to be generated and generates those elements with a step required to generate those many number of values
