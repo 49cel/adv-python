@@ -24,7 +24,5 @@
     4. **retstep** - returns the step value used
 - whats different from arange is that, arange generates a number of values with the specified step between a starting and ending point, but in linspace you specify the number of elements to be generated and generates those elements with a step required to generate those many number of values
 - there are two different formulae that get used whenever you toggle the endpoint to true or false
-  1. endpoint=True -> 
-  $$ \text{step} = \frac{\text{stop} - \text{start}}{\text{num} - 1} $$
-  2. endpoint=False -> 
-  $$ \text{step} = \frac{\text{stop} - \text{start}}{\text{num}} $$
+
+![img.png](images/img.png)
